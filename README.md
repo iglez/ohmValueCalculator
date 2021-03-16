@@ -63,3 +63,6 @@ Colors to Band C
 * For the moment I am only using the first 3 colors, so the 4th color is useless 
 * I think it will be fine to implement some to string to show something like 56k Ohms 2%
 * Method to receive an object as param instead of the strings
+* Add constant on REST API
+* Missing some Unit test on REST API 
+* Add linting (ESLint)
