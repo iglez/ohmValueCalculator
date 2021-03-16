@@ -11,4 +11,4 @@ module.exports = {
     white   : 1000000000,
     gold    : 0.1,
     silver  : 0.01,
-};
+}

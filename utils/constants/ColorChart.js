@@ -9,4 +9,4 @@ module.exports = {
     violet  : 7,
     grey    : 8,
     white   : 9,
-};
+}

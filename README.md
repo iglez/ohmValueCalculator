@@ -8,6 +8,9 @@ The electronic color code (http://en.wikipedia.org/wiki/Electronic_color_code) i
 ## Run
 `npm run start green blue orange`
 
+## Run REST API
+`npm run app`
+
 ## Use
 ### On code
 ```node
