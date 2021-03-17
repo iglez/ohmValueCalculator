@@ -1,5 +1,6 @@
 const colorChart        = require('./constants/ColorChart')
 const colorMultiplier   = require('./constants/ColorMultiplier')
+const colorTolerance    = require('./constants/ColorTolerance')
 
 /**
  * 
@@ -43,6 +44,22 @@ const calculateOhmValue = (bandAColor = '', bandBColor = '', bandCColor = '', ba
     return ohm
 }    
 
+const calculateTolerance = (bandDColor = '') => {
+
+    bandDColor = bandDColor.toString().toLowerCase().trim()
+
+    // Validate bandDColor
+    if ( !colorTolerance[bandDColor] ) {
+        throw Error(`The Band D Color (${bandDColor}) is not on the list chart of colors`)
+    }
+
+    // Tolerance
+    var tolerance = colorTolerance[bandDColor]
+
+    return tolerance
+}
+
 module.exports = {
     calculateOhmValue,
+    calculateTolerance
 }
